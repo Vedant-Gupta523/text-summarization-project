@@ -1,10 +1,3 @@
-"""
-NOTES:
-    
-    - Add a bag of words classifer to indentify the subject of article
-    
-"""
-
 #Import the Libraries
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
