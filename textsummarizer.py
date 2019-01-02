@@ -87,6 +87,7 @@ if whichSum == 1:
     print("Original word count: " + str(len(article_text.split())))
     print("Summarized word count: " + str(len(summary.split())))
     print("Percent reduction: " + str("%.2f" % (100 - len(summary.split()) * 100 / len(article_text.split()))) + "%")
+    print("Time reduction: " + str("%.0f" % (len(article_text.split()) / 225)) + " minutes to " + str("%.0f" % (len(summary.split()) / 225)) + " minutes")
     
 """ABSTRACTIVE TEXT SUMMARIZER"""
 
