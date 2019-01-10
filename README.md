@@ -17,7 +17,7 @@ Takes a URL of a news article (mainly compatible with Medium and some other site
 - Run textsummarizer.py in your console or any Python Interpreter and follow the prompts. 
 - You can use the database_builder_fixed.py to create your own database of articles (the current one is very small). It will automatically write to subject_freq.csv
 
-#### Notes: ####
+## Notes: ##
 
 - The abstractive text summarizer is currently under development and isn't in the code at the moment.
 - New updates are always coming out
