@@ -19,7 +19,11 @@ if demo == 2:
     url = input("URL of article:")
     
 
-"""EXTRACTIVE TEXT SUMMARIZER"""
+"""""""""""""""""""""""""""
+
+EXTRACTIVE TEXT SUMMARIZER
+
+"""""""""""""""""""""""""""
 
 if whichSum == 1:
     
@@ -89,7 +93,22 @@ if whichSum == 1:
     print("Percent reduction: " + str("%.2f" % (100 - len(summary.split()) * 100 / len(article_text.split()))) + "%")
     print("Time reduction: " + str("%.0f" % (len(article_text.split()) / 225)) + " minutes to " + str("%.0f" % (len(summary.split()) / 225)) + " minutes")
     
-"""ABSTRACTIVE TEXT SUMMARIZER"""
-
 if whichSum == 2:
     print("Coming soon")
+
+
+from bagofwords_classifier import corpus, cv, classifier
+
+testData = summary
+testCorpus = []
+testReview = re.sub('[^a-zA-Z]', ' ', testData)
+testReview = testReview.lower()
+testReview = testReview.split()
+testReview = ' '.join(testReview)
+corpus.append(testReview)
+testX = cv.fit_transform(corpus).toarray()
+testX = testX[-1:, :]
+testResult = classifier.predict(testX)
+corpus = corpus[:-1]
+
+print(testResult)
