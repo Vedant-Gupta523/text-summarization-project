@@ -1,5 +1,9 @@
 # text-summarization-project
 
+## Project Tutorial ##
+Part 1: https://medium.com/p/49d94543f73d
+Part 2: https://medium.com/p/30539111b23a
+
 ## What it does ##
 
 Takes a URL of a news article (mainly compatible with Medium and some other sites) as an input and outputs the follow:
